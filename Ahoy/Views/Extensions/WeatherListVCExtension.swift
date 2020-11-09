@@ -82,13 +82,12 @@ extension WeatherListViewController : UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let list = weatherListsData?.list?[indexPath.item]
-     //   print(person?.name as Any)
         
-    /*    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyBoard.instantiateViewController(withIdentifier: "PersonDetailViewController") as! PersonDetailViewController
-        controller.personData = person
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyBoard.instantiateViewController(withIdentifier: "WeatherDetailViewController") as! WeatherDetailViewController
+        controller.weatherData = list
         self.navigationController?.pushViewController(controller, animated: true)
-        */
+        
     }
 
 }

@@ -12,7 +12,7 @@ class WeatherListViewController: UIViewController {
 
     @IBOutlet weak var tableViewWeather: UITableView!
     let weatherViewModel : WeatherListViewModel = WeatherListViewModel()
-    var weatherListsData: WeatherListResponse?// = PersonResponse()
+    var weatherListsData: WeatherListResponse?
     
     override func viewDidLoad() {
         super.viewDidLoad()
