@@ -11,7 +11,15 @@ import UIKit
 class WeatherTableViewCell: UITableViewCell {
     
     @IBOutlet var viewBg: UIView!
-    @IBOutlet var lblTitle: UILabel!
+    @IBOutlet var lblDate: UILabel!
+    @IBOutlet var lblTime: UILabel!
+    
+    @IBOutlet var imgViewWeather: UIImageView!
+    
+    @IBOutlet var lblDesc: UILabel!
+    @IBOutlet var lblTemp: UILabel!
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

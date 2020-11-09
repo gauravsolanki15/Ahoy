@@ -17,7 +17,7 @@ extension WeatherListViewController : UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        return 60
+        return 80
     }
     /*
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -50,10 +50,29 @@ extension WeatherListViewController : UITableViewDelegate, UITableViewDataSource
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherTableViewCell", for: indexPath) as! WeatherTableViewCell
             
-      //  let list = weatherListsData?.list
         let weather = weatherListsData?.list?[indexPath.item].weather
         if weather?.count ?? 0 > 0 {
-            cell.lblTitle.text = weather?[0].main ?? ""
+           
+            //TimeStamp
+            let timeInterval = TimeInterval(weatherListsData?.list?[indexPath.item].dt ?? 0)
+            print("time interval is \(timeInterval)")
+            
+            cell.lblDate.text = Utility().getDate_TimeFromInterval(timeInterval: timeInterval, format: "dd, MMMM") //weather?[0].main ?? ""
+            
+            cell.lblTime.text = Utility().getDate_TimeFromInterval(timeInterval: timeInterval, format: "HH:mm:a")
+                        
+            let imageName = weather?[0].main ?? ""
+            cell.imgViewWeather.image = UIImage(named: "\(imageName)")
+            
+            cell.lblDesc.text = weather?[0].main ?? ""
+            let minTemp = String(format: "%.2f", weatherListsData?.list?[indexPath.item].main?.tempMin ?? "")
+
+            let maxTemp = String(format: "%.2f", weatherListsData?.list?[indexPath.item].main?.tempMax ?? "")
+
+            cell.lblTemp.text = "\(minTemp) - \(maxTemp)"
+            
+          //  "\(weatherListsData?.list?[indexPath.item].main?.tempMin) - \(weatherListsData?.list?[indexPath.item].main?.tempMax)"
+            
         }
         
         cell.selectionStyle = UITableViewCell.SelectionStyle.none

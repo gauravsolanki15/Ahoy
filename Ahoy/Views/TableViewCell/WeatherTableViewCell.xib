@@ -20,23 +20,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pug-od-Pf9">
-                                <rect key="frame" x="60" y="11.5" width="200" height="21"/>
+                                <rect key="frame" x="15" y="-0.5" width="105" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="6DR-lD-8oG"/>
                                     <constraint firstAttribute="height" constant="21" id="RKe-vn-oaL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGd-Ra-h5f" userLabel="lbl Time">
+                                <rect key="frame" x="15" y="23.5" width="105" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2gW-Wu-Jqk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1t4-bV-eB9">
+                                <rect key="frame" x="125" y="-13" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="651-az-qW8"/>
+                                    <constraint firstAttribute="height" constant="70" id="B6a-LB-A4P"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTK-4z-u8q" userLabel="lbl Desc">
+                                <rect key="frame" x="200" y="-0.5" width="105" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="It5-Qa-Aau"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOZ-e1-bAh" userLabel="lbl Temp">
+                                <rect key="frame" x="200" y="23.5" width="105" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tHA-Wn-QUH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGa-sf-Os2" userLabel="separator">
+                                <rect key="frame" x="15" y="43" width="290" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="f22-OR-HSS"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Pug-od-Pf9" firstAttribute="centerX" secondItem="HOV-gl-FhT" secondAttribute="centerX" id="9Yx-xX-tFJ"/>
-                            <constraint firstItem="Pug-od-Pf9" firstAttribute="centerY" secondItem="HOV-gl-FhT" secondAttribute="centerY" id="Hwe-Vh-kAX"/>
+                            <constraint firstItem="ZOZ-e1-bAh" firstAttribute="trailing" secondItem="QTK-4z-u8q" secondAttribute="trailing" id="40g-dC-ixU"/>
+                            <constraint firstAttribute="trailing" secondItem="QTK-4z-u8q" secondAttribute="trailing" constant="15" id="4LB-Xk-o2Z"/>
+                            <constraint firstItem="TGd-Ra-h5f" firstAttribute="trailing" secondItem="Pug-od-Pf9" secondAttribute="trailing" id="Bo9-4p-Hhu"/>
+                            <constraint firstItem="aGa-sf-Os2" firstAttribute="leading" secondItem="HOV-gl-FhT" secondAttribute="leading" constant="15" id="Bti-Pa-y3I"/>
+                            <constraint firstAttribute="width" secondItem="Pug-od-Pf9" secondAttribute="width" multiplier="3" constant="5" id="E7n-XS-hBi"/>
+                            <constraint firstItem="1t4-bV-eB9" firstAttribute="centerY" secondItem="HOV-gl-FhT" secondAttribute="centerY" id="Gqb-x0-q6k"/>
+                            <constraint firstItem="Pug-od-Pf9" firstAttribute="leading" secondItem="HOV-gl-FhT" secondAttribute="leading" constant="15" id="HVU-lr-cqN"/>
+                            <constraint firstItem="Pug-od-Pf9" firstAttribute="centerY" secondItem="HOV-gl-FhT" secondAttribute="centerY" constant="-12" id="Hwe-Vh-kAX"/>
+                            <constraint firstItem="TGd-Ra-h5f" firstAttribute="centerY" secondItem="HOV-gl-FhT" secondAttribute="centerY" constant="12" id="LuU-hn-Ni1"/>
+                            <constraint firstAttribute="bottom" secondItem="aGa-sf-Os2" secondAttribute="bottom" id="Mmq-Qx-DZE"/>
+                            <constraint firstAttribute="trailing" secondItem="aGa-sf-Os2" secondAttribute="trailing" constant="15" id="bsx-KX-o0F"/>
+                            <constraint firstItem="1t4-bV-eB9" firstAttribute="centerX" secondItem="HOV-gl-FhT" secondAttribute="centerX" id="eS0-21-cD9"/>
+                            <constraint firstItem="ZOZ-e1-bAh" firstAttribute="leading" secondItem="QTK-4z-u8q" secondAttribute="leading" id="g2R-j0-ELl"/>
+                            <constraint firstItem="TGd-Ra-h5f" firstAttribute="leading" secondItem="Pug-od-Pf9" secondAttribute="leading" id="i91-4e-Ok9"/>
+                            <constraint firstItem="QTK-4z-u8q" firstAttribute="centerY" secondItem="Pug-od-Pf9" secondAttribute="centerY" id="jGI-mA-fLe"/>
+                            <constraint firstItem="ZOZ-e1-bAh" firstAttribute="centerY" secondItem="TGd-Ra-h5f" secondAttribute="centerY" id="kcd-a2-FHs"/>
+                            <constraint firstAttribute="width" secondItem="QTK-4z-u8q" secondAttribute="width" multiplier="3" constant="5" id="wKT-vz-QBL"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="HOV-gl-FhT" secondAttribute="bottom" id="3x1-FS-lLV"/>
                     <constraint firstItem="HOV-gl-FhT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="H9Q-6e-MCb"/>
@@ -46,7 +105,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="lblTitle" destination="Pug-od-Pf9" id="oFo-BJ-e7B"/>
+                <outlet property="imgViewWeather" destination="1t4-bV-eB9" id="tHr-gT-Sv9"/>
+                <outlet property="lblDate" destination="Pug-od-Pf9" id="Wg8-IZ-10b"/>
+                <outlet property="lblDesc" destination="QTK-4z-u8q" id="LWq-DU-e0J"/>
+                <outlet property="lblTemp" destination="ZOZ-e1-bAh" id="7rM-2P-OGt"/>
+                <outlet property="lblTime" destination="TGd-Ra-h5f" id="TXc-CE-QJR"/>
                 <outlet property="viewBg" destination="HOV-gl-FhT" id="ykk-ps-AIp"/>
             </connections>
             <point key="canvasLocation" x="139" y="135"/>

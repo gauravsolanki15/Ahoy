@@ -20,6 +20,8 @@
 		F4A2EC652559388B00FEAE52 /* WeatherListResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC642559388B00FEAE52 /* WeatherListResource.swift */; };
 		F4A2EC6725593A8200FEAE52 /* WeatherListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC6625593A8200FEAE52 /* WeatherListResponseModel.swift */; };
 		F4A2EC6925593F7400FEAE52 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC6825593F7400FEAE52 /* WeatherListViewModel.swift */; };
+		F4A2EC6B255950C100FEAE52 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC6A255950C100FEAE52 /* Utility.swift */; };
+		F4A2EC6D255983A800FEAE52 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC6C255983A800FEAE52 /* WeatherDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		F4A2EC642559388B00FEAE52 /* WeatherListResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListResource.swift; sourceTree = "<group>"; };
 		F4A2EC6625593A8200FEAE52 /* WeatherListResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListResponseModel.swift; sourceTree = "<group>"; };
 		F4A2EC6825593F7400FEAE52 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
+		F4A2EC6A255950C100FEAE52 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		F4A2EC6C255983A800FEAE52 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				F4A2EC622559379100FEAE52 /* Common.swift */,
+				F4A2EC6A255950C100FEAE52 /* Utility.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				F4A2EC402559023300FEAE52 /* WeatherListViewController.swift */,
+				F4A2EC6C255983A800FEAE52 /* WeatherDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A2EC6B255950C100FEAE52 /* Utility.swift in Sources */,
 				F4A2EC6925593F7400FEAE52 /* WeatherListViewModel.swift in Sources */,
 				F4A2EC652559388B00FEAE52 /* WeatherListResource.swift in Sources */,
 				F4A2EC6725593A8200FEAE52 /* WeatherListResponseModel.swift in Sources */,
@@ -248,6 +255,7 @@
 				F4A2EC5F25592F8600FEAE52 /* WeatherListVCExtension.swift in Sources */,
 				F4A2EC412559023300FEAE52 /* WeatherListViewController.swift in Sources */,
 				F4A2EC632559379100FEAE52 /* Common.swift in Sources */,
+				F4A2EC6D255983A800FEAE52 /* WeatherDetailViewController.swift in Sources */,
 				F4A2EC3D2559023300FEAE52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,7 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codewithGaurav.Ahoy.Ahoy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -420,7 +428,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codewithGaurav.Ahoy.Ahoy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
