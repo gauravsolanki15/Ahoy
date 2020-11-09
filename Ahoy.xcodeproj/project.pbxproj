@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F4A2EC3D2559023300FEAE52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC3C2559023300FEAE52 /* AppDelegate.swift */; };
-		F4A2EC3F2559023300FEAE52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC3E2559023300FEAE52 /* SceneDelegate.swift */; };
 		F4A2EC412559023300FEAE52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC402559023300FEAE52 /* ViewController.swift */; };
 		F4A2EC442559023300FEAE52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A2EC422559023300FEAE52 /* Main.storyboard */; };
 		F4A2EC462559023700FEAE52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A2EC452559023700FEAE52 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		F4A2EC392559023300FEAE52 /* Ahoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ahoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A2EC3C2559023300FEAE52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4A2EC3E2559023300FEAE52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4A2EC402559023300FEAE52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4A2EC432559023300FEAE52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4A2EC452559023700FEAE52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,8 +54,15 @@
 		F4A2EC3B2559023300FEAE52 /* Ahoy */ = {
 			isa = PBXGroup;
 			children = (
+				F4A2EC50255908A500FEAE52 /* Services */,
+				F4A2EC51255908B900FEAE52 /* Data Resource */,
+				F4A2EC52255908CF00FEAE52 /* Common */,
+				F4A2EC53255908DC00FEAE52 /* Model */,
+				F4A2EC54255908F100FEAE52 /* ViewModel */,
+				F4A2EC55255908FA00FEAE52 /* Views */,
+				F4A2EC56255908FF00FEAE52 /* Controllers */,
+				F4A2EC572559090A00FEAE52 /* Storyboards */,
 				F4A2EC3C2559023300FEAE52 /* AppDelegate.swift */,
-				F4A2EC3E2559023300FEAE52 /* SceneDelegate.swift */,
 				F4A2EC402559023300FEAE52 /* ViewController.swift */,
 				F4A2EC422559023300FEAE52 /* Main.storyboard */,
 				F4A2EC452559023700FEAE52 /* Assets.xcassets */,
@@ -65,6 +70,62 @@
 				F4A2EC4A2559023700FEAE52 /* Info.plist */,
 			);
 			path = Ahoy;
+			sourceTree = "<group>";
+		};
+		F4A2EC50255908A500FEAE52 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4A2EC51255908B900FEAE52 /* Data Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Resource";
+			sourceTree = "<group>";
+		};
+		F4A2EC52255908CF00FEAE52 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F4A2EC53255908DC00FEAE52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4A2EC54255908F100FEAE52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F4A2EC55255908FA00FEAE52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4A2EC56255908FF00FEAE52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F4A2EC572559090A00FEAE52 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +201,6 @@
 			files = (
 				F4A2EC412559023300FEAE52 /* ViewController.swift in Sources */,
 				F4A2EC3D2559023300FEAE52 /* AppDelegate.swift in Sources */,
-				F4A2EC3F2559023300FEAE52 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
