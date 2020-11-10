@@ -11,6 +11,7 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var segmentCtrlTemp: UISegmentedControl!
+    var tempUnitValue = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Settings"
@@ -23,6 +24,7 @@ class SettingsViewController: UIViewController {
             segmentCtrlTemp.selectedSegmentIndex = 1
         }
         
+        tempUnitValue = UserDefaultsClass.sharedInstance.getTempUnit() ?? ""
         // Do any additional setup after loading the view.
     }
     
@@ -37,6 +39,15 @@ class SettingsViewController: UIViewController {
             UserDefaultsClass.sharedInstance.setTempUnit(unit: "imperial")
         default:
             break;
+        }
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        if tempUnitValue != UserDefaultsClass.sharedInstance.getTempUnit() {
+            NotificationCenter.default.post(name: NSNotification.Name.init("TempUnitChanged"), object: nil, userInfo: nil)
+            
         }
         
     }

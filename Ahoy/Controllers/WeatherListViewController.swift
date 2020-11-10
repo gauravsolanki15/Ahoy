@@ -32,6 +32,16 @@ class WeatherListViewController: UIViewController {
         style: .plain,
         target: self,
         action: #selector(openSettings))
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshData), name: NSNotification.Name.init("TempUnitChanged"), object: nil)
+        
+    }
+    
+    @objc func refreshData() {
+        
+        DispatchQueue.main.async {
+            self.tableViewWeather.reloadData()
+        }
     }
     
     @objc func openSettings() {
