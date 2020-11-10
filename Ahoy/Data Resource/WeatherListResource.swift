@@ -14,7 +14,7 @@ struct WeatherListResource
     {
         let httpUtility = HttpUtility()
 
-        let weatherEndpoint = "\(ApiEndpoints.weatherLists)forecast?q=\(Constants.city)&cnt=\(Constants.forecastDays)&APPID=\(Constants.apiKey)"
+        let weatherEndpoint = "\(ApiEndpoints.weatherLists)forecast?q=\(Constants.city)&cnt=\(Constants.forecastDays)&units=\(String(describing: UserDefaultsClass.sharedInstance.getTempUnit() ?? ""))&APPID=\(Constants.apiKey)"
 
         let requestUrl = URL(string:weatherEndpoint)!
         print(requestUrl)

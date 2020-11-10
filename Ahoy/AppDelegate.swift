@@ -14,6 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        if (UserDefaults.standard.value(forKey: "TemperatureUnit") as? String) == nil {
+            UserDefaultsClass.sharedInstance.setTempUnit(unit: "C")
+        }
+        
+        
         // Override point for customization after application launch.
         return true
     }

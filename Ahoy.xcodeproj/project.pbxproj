@@ -22,6 +22,8 @@
 		F4A2EC6925593F7400FEAE52 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC6825593F7400FEAE52 /* WeatherListViewModel.swift */; };
 		F4A2EC6B255950C100FEAE52 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC6A255950C100FEAE52 /* Utility.swift */; };
 		F4A2EC6D255983A800FEAE52 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC6C255983A800FEAE52 /* WeatherDetailViewController.swift */; };
+		F4A2EC6F2559BD2300FEAE52 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC6E2559BD2300FEAE52 /* SettingsViewController.swift */; };
+		F4A2EC712559C46C00FEAE52 /* UserDefaultsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2EC702559C46C00FEAE52 /* UserDefaultsClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		F4A2EC6825593F7400FEAE52 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		F4A2EC6A255950C100FEAE52 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		F4A2EC6C255983A800FEAE52 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
+		F4A2EC6E2559BD2300FEAE52 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F4A2EC702559C46C00FEAE52 /* UserDefaultsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 			children = (
 				F4A2EC622559379100FEAE52 /* Common.swift */,
 				F4A2EC6A255950C100FEAE52 /* Utility.swift */,
+				F4A2EC702559C46C00FEAE52 /* UserDefaultsClass.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			children = (
 				F4A2EC402559023300FEAE52 /* WeatherListViewController.swift */,
 				F4A2EC6C255983A800FEAE52 /* WeatherDetailViewController.swift */,
+				F4A2EC6E2559BD2300FEAE52 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -251,12 +257,14 @@
 				F4A2EC652559388B00FEAE52 /* WeatherListResource.swift in Sources */,
 				F4A2EC6725593A8200FEAE52 /* WeatherListResponseModel.swift in Sources */,
 				F4A2EC612559376000FEAE52 /* HttpUtility.swift in Sources */,
+				F4A2EC712559C46C00FEAE52 /* UserDefaultsClass.swift in Sources */,
 				F4A2EC5C255910B400FEAE52 /* WeatherTableViewCell.swift in Sources */,
 				F4A2EC5F25592F8600FEAE52 /* WeatherListVCExtension.swift in Sources */,
 				F4A2EC412559023300FEAE52 /* WeatherListViewController.swift in Sources */,
 				F4A2EC632559379100FEAE52 /* Common.swift in Sources */,
 				F4A2EC6D255983A800FEAE52 /* WeatherDetailViewController.swift in Sources */,
 				F4A2EC3D2559023300FEAE52 /* AppDelegate.swift in Sources */,
+				F4A2EC6F2559BD2300FEAE52 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,7 +25,43 @@ class WeatherTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func configureCell(with cellItem: List?) {
+    
+        if let cellItem = cellItem {
+            let weather = cellItem.weather
+            if weather?.count ?? 0 > 0 {
+               
+                //TimeStamp
+                let timeInterval = TimeInterval(cellItem.dt ?? 0)
+                print("time interval is \(timeInterval)")
+                
+                lblDate.text = Utility().getDate_TimeFromInterval(timeInterval: timeInterval, format: "dd, MMMM") //weather?[0].main ?? ""
+                
+                lblTime.text = Utility().getDate_TimeFromInterval(timeInterval: timeInterval, format: "HH:mm:a")
+                            
+                let imageName = weather?[0].main ?? ""
+                imgViewWeather.image = UIImage(named: "\(imageName)")
+                
+                lblDesc.text = weather?[0].main ?? ""
+                let temp = String(format: "%.2f", cellItem.main?.temp ?? "")
 
+             //   let maxTemp = String(format: "%.2f", cellItem.main?.tempMax ?? "")
+
+                if UserDefaultsClass.sharedInstance.getTempUnit() == "metric" {
+                    lblTemp.text = NSString(format:"\(temp)%@" as NSString, "\u{00B0}") as String + " C"
+                }else{
+                    lblTemp.text = NSString(format:"\(temp)%@" as NSString, "\u{00B0}") as String + " F"
+                }
+                
+                
+              //  "\(weatherListsData?.list?[indexPath.item].main?.tempMin) - \(weatherListsData?.list?[indexPath.item].main?.tempMax)"
+                
+            }
+            self.selectionStyle = UITableViewCell.SelectionStyle.none
+        }
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

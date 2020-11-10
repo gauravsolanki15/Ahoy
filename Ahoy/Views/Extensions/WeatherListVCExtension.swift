@@ -49,7 +49,11 @@ extension WeatherListViewController : UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherTableViewCell", for: indexPath) as! WeatherTableViewCell
-            
+        
+        let weather = weatherListsData?.list?[indexPath.item]
+        cell.configureCell(with: weather)
+        
+        /*
         let weather = weatherListsData?.list?[indexPath.item].weather
         if weather?.count ?? 0 > 0 {
            
@@ -74,8 +78,8 @@ extension WeatherListViewController : UITableViewDelegate, UITableViewDataSource
           //  "\(weatherListsData?.list?[indexPath.item].main?.tempMin) - \(weatherListsData?.list?[indexPath.item].main?.tempMax)"
             
         }
-        
-        cell.selectionStyle = UITableViewCell.SelectionStyle.none
+        */
+      //  cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell
     }
 
