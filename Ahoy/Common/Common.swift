@@ -6,6 +6,10 @@
 //  Copyright © 2020 Gaurav Solanki. All rights reserved.
 //
 
+/*
+ - This file is used to define all constants and have access to single point.
+ */
+
 import Foundation
 
 struct Constants {

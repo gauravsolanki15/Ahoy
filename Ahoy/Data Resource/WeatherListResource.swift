@@ -6,6 +6,13 @@
 //  Copyright © 2020 Gaurav Solanki. All rights reserved.
 //
 
+
+/**
+- This Resource file will be used to define APIs functions that can be used in WeatherList View Controller related stuffs and from here it will call "HttpUtility" to get the defined data.
+- Here, we are creating request parameters to be sent to "HttpUtility" class.
+- I have created this file in order to further divide the ViewModel code so that WeatherListViewModel doesnt get huge.
+*/
+
 import Foundation
 
 struct WeatherListResource
@@ -27,3 +34,5 @@ struct WeatherListResource
     
     
 }
+
+

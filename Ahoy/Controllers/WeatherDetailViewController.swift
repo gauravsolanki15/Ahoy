@@ -6,6 +6,11 @@
 //  Copyright © 2020 Gaurav Solanki. All rights reserved.
 //
 
+/**
+- This is Weather Detail Screen to be shown once we click on any Weather item  from the List.
+- I have tried to follow the same structure to keep View Controller as small as possible and only done coding for UI related stuffs.
+*/
+
 import UIKit
 
 class WeatherDetailViewController: UIViewController {
@@ -31,21 +36,11 @@ class WeatherDetailViewController: UIViewController {
 
     private func configureUI(){
                 
-     //   filmsTableView.register(UINib(nibName: "FilmsTableViewCell", bundle: nil), forCellReuseIdentifier: "FilmsTableViewCell")
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         let timeInterval = TimeInterval(weatherData?.dt ?? 0)
         lblDate.text = Utility().getDate_TimeFromInterval(timeInterval: timeInterval, format: "dd, MMMM")
         lblTime.text = Utility().getDate_TimeFromInterval(timeInterval: timeInterval, format: "HH:mm")
         lblAm_Pm.text = Utility().getDate_TimeFromInterval(timeInterval: timeInterval, format: "a")
-        print(lblAm_Pm.text)
-        
-      /*  if weatherData?.weather?[0].main == "Clouds" {
-            self.viewBg.backgroundColor = UIColor.blue
-        }else if weatherData?.weather?[0].main == "Clear" {
-            self.viewBg.backgroundColor = UIColor.orange
-        }else if weatherData?.weather?[0].main == "Rain" {
-            self.viewBg.backgroundColor = UIColor.orange
-        } */
         
         imgViewWeather.image = UIImage(named: "\(weatherData?.weather?[0].main ?? "")")
         
@@ -58,16 +53,7 @@ class WeatherDetailViewController: UIViewController {
         }else{
             lblTempDegree.text = "F"
         }
-        
-   /*     lblNameValue.text = personData?.name
-        lblDOBValue.text = personData?.birthYear
-        lblHeightValue.text = personData?.height
-        lblWeightValue.text = personData?.mass
-        lblHairColorValue.text = personData?.hairColor
-        lblSkinColorValue.text = personData?.skinColor
-        lblEyeColorValue.text = personData?.eyeColor
-        lblGenderValue.text = (personData?.gender).map { $0.rawValue }
-    */
+
     }
 
 }

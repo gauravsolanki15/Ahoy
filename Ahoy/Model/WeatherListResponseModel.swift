@@ -6,9 +6,12 @@
 //  Copyright © 2020 Gaurav Solanki. All rights reserved.
 //
 
+/**
+- This file is the Model class of all  APIs defined in "WeatherListResponse" file, like this we can create all Model Class to parse using Codable functionality...
+*/
+
 import Foundation
 
-// MARK: - Welcome
 class WeatherListResponse: Codable {
     let cod: String?
     let message, cnt: Int?

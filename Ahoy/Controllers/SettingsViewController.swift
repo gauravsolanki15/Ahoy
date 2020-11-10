@@ -14,6 +14,11 @@ class SettingsViewController: UIViewController {
     var tempUnitValue = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
+        // Do any additional setup after loading the view.
+    }
+    
+    private func configureUI(){
         self.navigationItem.title = "Settings"
         segmentCtrlTemp.setTitle(NSString(format:"C%@" as NSString, "\u{00B0}") as String, forSegmentAt: 0)
         segmentCtrlTemp.setTitle(NSString(format:"F%@" as NSString, "\u{00B0}") as String, forSegmentAt: 1)
@@ -25,7 +30,6 @@ class SettingsViewController: UIViewController {
         }
         
         tempUnitValue = UserDefaultsClass.sharedInstance.getTempUnit() ?? ""
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func changeTempUnit(_ sender: Any) {
@@ -33,7 +37,6 @@ class SettingsViewController: UIViewController {
         switch segmentCtrlTemp.selectedSegmentIndex
         {
         case 0:
-            print("C")
             UserDefaultsClass.sharedInstance.setTempUnit(unit: "metric")
         case 1:
             UserDefaultsClass.sharedInstance.setTempUnit(unit: "imperial")
@@ -47,7 +50,6 @@ class SettingsViewController: UIViewController {
         
         if tempUnitValue != UserDefaultsClass.sharedInstance.getTempUnit() {
             NotificationCenter.default.post(name: NSNotification.Name.init("TempUnitChanged"), object: nil, userInfo: nil)
-            
         }
         
     }

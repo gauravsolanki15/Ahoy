@@ -6,6 +6,12 @@
 //  Copyright © 2020 Gaurav Solanki. All rights reserved.
 //
 
+/**
+- This is first Screen to be shown and have kept mapping from Storyboard.
+- I have tried to keep the ViewController file as short as possible by adding just UI relevant things. Rest is done in ViewModel, Views, Model, etc.
+- I believe to keep ViewController to be around 100 lines.
+*/
+
 import UIKit
 
 class WeatherListViewController: UIViewController {
@@ -40,7 +46,7 @@ class WeatherListViewController: UIViewController {
     @objc func refreshData() {
         
         DispatchQueue.main.async {
-            self.tableViewWeather.reloadData()
+            self.getWeatherListsFromAPI()
         }
     }
     
@@ -55,11 +61,8 @@ class WeatherListViewController: UIViewController {
     private func getWeatherListsFromAPI(){
         weatherViewModel.getWeatherListData { (weatherApiResponse) in
             if(weatherApiResponse != nil) {
-             //   print(personApiResponse?.count as Any)
                 
                 self.weatherListsData = weatherApiResponse!
-              /*  self.weatherListsData?.results = weatherApiResponse!.results?.sorted(by: { ($0.name!) < ($1.name!)})
-                */
                 DispatchQueue.main.async {
                     self.tableViewWeather.reloadData()
                 }

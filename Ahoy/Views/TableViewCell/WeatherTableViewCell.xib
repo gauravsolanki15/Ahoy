@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGd-Ra-h5f" userLabel="lbl Time">
-                                <rect key="frame" x="15" y="38.5" width="121" height="21"/>
+                                <rect key="frame" x="15" y="39.5" width="121" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="2gW-Wu-Jqk"/>
                                 </constraints>
@@ -57,7 +58,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOZ-e1-bAh" userLabel="lbl Temp">
-                                <rect key="frame" x="232" y="38.5" width="121" height="21"/>
+                                <rect key="frame" x="232" y="39.5" width="121" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="tHA-Wn-QUH"/>
                                 </constraints>
@@ -66,8 +67,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGa-sf-Os2" userLabel="separator">
-                                <rect key="frame" x="15" y="73" width="338" height="1"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="73" width="368" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="f22-OR-HSS"/>
                                 </constraints>
@@ -78,14 +79,14 @@
                             <constraint firstItem="ZOZ-e1-bAh" firstAttribute="trailing" secondItem="QTK-4z-u8q" secondAttribute="trailing" id="40g-dC-ixU"/>
                             <constraint firstAttribute="trailing" secondItem="QTK-4z-u8q" secondAttribute="trailing" constant="15" id="4LB-Xk-o2Z"/>
                             <constraint firstItem="TGd-Ra-h5f" firstAttribute="trailing" secondItem="Pug-od-Pf9" secondAttribute="trailing" id="Bo9-4p-Hhu"/>
-                            <constraint firstItem="aGa-sf-Os2" firstAttribute="leading" secondItem="HOV-gl-FhT" secondAttribute="leading" constant="15" id="Bti-Pa-y3I"/>
+                            <constraint firstItem="aGa-sf-Os2" firstAttribute="leading" secondItem="HOV-gl-FhT" secondAttribute="leading" id="Bti-Pa-y3I"/>
                             <constraint firstAttribute="width" secondItem="Pug-od-Pf9" secondAttribute="width" multiplier="3" constant="5" id="E7n-XS-hBi"/>
                             <constraint firstItem="1t4-bV-eB9" firstAttribute="centerY" secondItem="HOV-gl-FhT" secondAttribute="centerY" id="Gqb-x0-q6k"/>
                             <constraint firstItem="Pug-od-Pf9" firstAttribute="leading" secondItem="HOV-gl-FhT" secondAttribute="leading" constant="15" id="HVU-lr-cqN"/>
                             <constraint firstItem="Pug-od-Pf9" firstAttribute="centerY" secondItem="HOV-gl-FhT" secondAttribute="centerY" constant="-12" id="Hwe-Vh-kAX"/>
-                            <constraint firstItem="TGd-Ra-h5f" firstAttribute="centerY" secondItem="HOV-gl-FhT" secondAttribute="centerY" constant="12" id="LuU-hn-Ni1"/>
+                            <constraint firstItem="TGd-Ra-h5f" firstAttribute="centerY" secondItem="HOV-gl-FhT" secondAttribute="centerY" constant="13" id="LuU-hn-Ni1"/>
                             <constraint firstAttribute="bottom" secondItem="aGa-sf-Os2" secondAttribute="bottom" id="Mmq-Qx-DZE"/>
-                            <constraint firstAttribute="trailing" secondItem="aGa-sf-Os2" secondAttribute="trailing" constant="15" id="bsx-KX-o0F"/>
+                            <constraint firstAttribute="trailing" secondItem="aGa-sf-Os2" secondAttribute="trailing" id="bsx-KX-o0F"/>
                             <constraint firstItem="1t4-bV-eB9" firstAttribute="centerX" secondItem="HOV-gl-FhT" secondAttribute="centerX" id="eS0-21-cD9"/>
                             <constraint firstItem="ZOZ-e1-bAh" firstAttribute="leading" secondItem="QTK-4z-u8q" secondAttribute="leading" id="g2R-j0-ELl"/>
                             <constraint firstItem="TGd-Ra-h5f" firstAttribute="leading" secondItem="Pug-od-Pf9" secondAttribute="leading" id="i91-4e-Ok9"/>

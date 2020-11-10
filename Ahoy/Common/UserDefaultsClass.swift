@@ -6,6 +6,12 @@
 //  Copyright © 2020 Gaurav Solanki. All rights reserved.
 //
 
+/*
+ - Created this file to handle all Userdefaults values using Singleton instances.
+ - So, setting/ getting values to Userdefaults will have only single object in the project.
+ - Also, Userdefaults shouldn't be used to store sensitive values.
+ */
+
 import Foundation
 
 class UserDefaultsClass {
@@ -25,9 +31,6 @@ class UserDefaultsClass {
     func getTempUnit()->String? {
         return UserDefaults.standard.value(forKey: "TemperatureUnit") as? String
     }
-    
-    
-    //UserDefaultsClass.sharedInstance.getTempUnit() ?? ""
     
     
 }
